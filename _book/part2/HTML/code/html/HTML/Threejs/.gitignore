@@ -1,6 +1,0 @@
-./frameworks/runtime-src/proj.android/bin/*
-./three.js-master/*
-.idea/*
-.DS_store
-simulator
-*.iml
