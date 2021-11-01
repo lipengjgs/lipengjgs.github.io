@@ -193,7 +193,16 @@
 const search = instantsearch({
   appId: 'VAUHHEWNFR',
   indexName: 'posts',
-  apiKey: 'cc08af1e00a15b9f7aef1c54028e7b02'
+  apiKey: '3e544a2cb9d5902bdf69247ec1c592f1',
+  searchFunction: function(helper) {
+    var searchResults = $('#search-hits');
+    if (helper.state.query === '') {
+      searchResults.hide();
+      return;
+    }
+    helper.search();
+    searchResults.show();
+  }
 });
 
 const hitTemplate = function(hit) {
@@ -224,10 +233,9 @@ const hitTemplate = function(hit) {
 
   return `
     <div class="post-item">
-      <span class="post-meta">${date}</span>
+   
       <h2><a class="post-link" href="${url}">${title}</a></h2>
-      <a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>
-      <div class="post-snippet">${content}</div>
+
     </div>
   `;
 }
@@ -237,7 +245,7 @@ search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
     placeholder: 'Search into posts...',
-    poweredBy: true // This is required if you're on the free Community plan
+    poweredBy: true 
   })
 );
 
