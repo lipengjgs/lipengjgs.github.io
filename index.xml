@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>FE Manual</title>
+    <title>LP&#39;s BLOG</title>
     <link>https://lipengjgs.github.io/</link>
-    <description>Recent content on FE Manual</description>
+    <description>Recent content on LP&#39;s BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lipengjgs.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -40,7 +40,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lipengjgs.github.io/top/about/</guid>
-      <description>Li Peng</description>
+      <description>Li Peng is a Front End Developer and a pharmacist. What he wants to do is to apply CS on pharmacy. He has experiences in Front End Developing and Pharmaceutical industry for a couple of years.
+He always believes that a good attitude is the basis of doing anything well. Keeping a passion for technics is natural to him.
+He also has a lot of interests. While he is free, he likes keeping fit, playing the guitar, playing basketball and so on.</description>
     </item>
     
     <item>
@@ -49,7 +51,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lipengjgs.github.io/top/books/</guid>
-      <description></description>
+      <description>FE Manual 发展很快，每个人都需要不断地重塑对应的知识体系 保证知识的完备性 面对质疑，怎么提升自己才是关键的，我们只要不断学习，凭实力说话，自然就能赢</description>
     </item>
     
   </channel>
