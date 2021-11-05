@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BASIC on LP&#39;s BLOG</title>
-    <link>https://lipengjgs.github.io/categories/basic/</link>
-    <description>Recent content in BASIC on LP&#39;s BLOG</description>
+    <title>编程思想基础 on LP&#39;s BLOG</title>
+    <link>https://lipengjgs.github.io/tags/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3%E5%9F%BA%E7%A1%80/</link>
+    <description>Recent content in 编程思想基础 on LP&#39;s BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lipengjgs.github.io/categories/basic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lipengjgs.github.io/tags/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《代码的艺术》笔记</title>
       <link>https://lipengjgs.github.io/post/2021-11-04/</link>

@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="面向对象编程原则" />
-    <meta property="og:title" content="面向对象编程原则" />
-    <meta property="twitter:title" content="面向对象编程原则" />
+    <meta name="title" content="《代码的艺术》笔记" />
+    <meta property="og:title" content="《代码的艺术》笔记" />
+    <meta property="twitter:title" content="《代码的艺术》笔记" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="博客, 个人网站, 互联网, Web 微服务">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>面向对象编程原则-blog of lipengjgs</title>
+    <title>《代码的艺术》笔记-blog of lipengjgs</title>
 
-    <link rel="canonical" href="/post/2021-11-01/">
+    <link rel="canonical" href="/post/2021-11-04/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 
@@ -157,7 +157,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/post-bg-unix-linux.jpg')
+        background-image: url('/img/the%20art%20of%20coding.jfif')
     }
 </style>
 
@@ -174,8 +174,8 @@
                         </a>
                         
                     </div>
-                    <h1>面向对象编程原则</h1>
-                    <h2 class="subheading"></h2>
+                    <h1>《代码的艺术》笔记</h1>
+                    <h2 class="subheading">清华大学博士章老师《代码的艺术》一课，让如今还没有入门的我有了一些基本的方向</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -183,7 +183,7 @@
                                     LP&#39;s BLOG
                              
                             on 
-                            Monday, November 1, 2021
+                            Thursday, November 4, 2021
                             
                             
                             
@@ -209,56 +209,99 @@
                 post-container">
 
                 
-                <h2 id="一开闭原则open-close-principle">一、开闭原则（Open Close Principle）</h2>
-<blockquote>
-<p>软件实体应当对扩展开放，对修改关闭</p>
-<p>当应用的需求改变时，在不修改软件实体的源代码或者二进制代码的前提下，可以扩展模块的功能，使其满足新的需求
-开闭原则的意思是：对扩展开放，对修改关闭。在程序需要进行拓展的时候，不能去修改原有的代码，实现一个热插拔的效果。简言之，是为了使程序的扩展性好，易于维护和升级。想要达到这样的效果，我们需要使用接口和抽象类，后面的具体设计中我们会提到这点。</p>
-</blockquote>
+                <h2 id="思考">思考</h2>
+<p>虽然我们做的是技术，但是驱动技术发展的东西却很多在技术之外：比如<strong>团队精神</strong>、沟通效率、<strong>思考和研究方法</strong>、人文修养等；<strong>多读书、读好书很有必要</strong>。</p>
+<p>以前觉得前端只是软件的一部分，压根就理解不了软件工程的一些概念，后面做的时间稍微长了之后，才发现“麻雀虽小、五脏俱全”，也不断地问自己，称呼自己为“工程师”，那么自己真的入门了吗？发展很快，从以前的单纯页面脚本开发到现在的模块化、工程化，让人迫切地需要从一个高的维度去审视自己的工程能力，要做好前端开发，离不开<strong>软件工程的思想</strong>，也几乎让自己想回炉重造的欲望更加强烈，而现实来讲现在要做的就是把握好当下，脚踏实地，<strong>非宁静无以致远</strong>。</p>
+<h2 id="动机">动机</h2>
+<p>目的是改变世界，而不是学习炫耀技术</p>
+<h2 id="从艺术的角度去看代码">从艺术的角度去看代码</h2>
+<p>编码可以成为艺术，需要激情，也是非常具有创造性的工作。代码是人类智慧的结晶，反映了一个人/团队的精神。</p>
 <ol>
-<li>项目中划分出的模块；</li>
-<li>类与接口</li>
-<li>方法</li>
+<li>
+<p>编码： 无序 -&gt; 有序； 现实世界中的问题 -&gt; 数字世界的模型； 未知 -&gt; 已知； 需要有<strong>把握问题、建立模型、沟通协作、编码执行</strong>的能力。</p>
+</li>
+<li>
+<p>好代码的定义： Fast、Maintainable and Simple、Small、Re-usable、Testable、Portable(可移植)、Monitorable(可监控)、Operational(可运维)、Scalable and Extensible(可扩展)；</p>
+<p>编码前：需求分析、系统设计； 编码中：编写代码、单元测试；编码后：集成测试、上线，持续运营迭代 （持续循环）</p>
+</li>
+<li>
+<p><strong>代码主要写给人看的</strong>，理想的场景是：看别人的代码感觉和看自己的代码一样；看代码时能够专注于逻辑，而不是格式方面；Don&rsquo;t make me think；</p>
+</li>
+<li>
+<p>模块（好的模块划分是软件架构稳定的基础）</p>
+<ul>
+<li><strong>数据模块（数据封装）</strong>：以数据为中心，内部为数据结构和算法，对外暴露明确的数据访问接口，很多程序最后不好维护都是数据封装没做好。</li>
+<li><strong>过程类模块</strong>：不含数据，调用数据模块/过程类模块</li>
+</ul>
+</li>
+<li>
+<p>类和函数</p>
+<ul>
+<li>思想</li>
+<li>模块内部的组成</li>
+<li>函数</li>
+<li>代码块：先写注释，再写代码</li>
+<li>命名：准确、易懂、可读性（下划线、驼峰）</li>
+</ul>
+</li>
+<li>
+<p>系统的可监测性很重要</p>
+</li>
 </ol>
-<p>&ldquo;抽象约束、封装变化&rdquo;：即通过接口或者抽象类为软件实体定义一个相对稳定的抽象层，而将相同的可变因素封装在相同的具体实现类中。</p>
-<h2 id="二里氏替换原则liskov-substitution-principle">二、里氏替换原则（Liskov Substitution Principle）</h2>
-<blockquote>
-<p>子类可以扩展父类的功能，但不能改变父类原有的功能</p>
-</blockquote>
-<blockquote>
-<p>修正方法：程序违背了里氏替换原则，取消原来的继承关系，重新设计它们之间的关系
-里氏代换原则是面向对象设计的基本原则之一。 里氏代换原则中说，任何基类可以出现的地方，子类一定可以出现。LSP 是继承复用的基石，只有当派生类可以替换掉基类，且软件单位的功能不受到影响时，基类才能真正被复用，而派生类也能够在基类的基础上增加新的行为。里氏代换原则是对开闭原则的补充。实现开闭原则的关键步骤就是抽象化，而基类与子类的继承关系就是抽象化的具体实现，所以里氏代换原则是对实现抽象化的具体步骤的规范。</p>
-</blockquote>
-<h2 id="三依赖倒置原则dependence-inversion-principle">三、依赖倒置原则（Dependence Inversion Principle）</h2>
-<p>这个原则是开闭原则的基础，具体内容：针对接口编程，依赖于抽象而不依赖于具体。
-高层模块不应该依赖低层模块，两者都应该依赖其抽象
-抽象不应该依赖细节，细节应该依赖抽象
-面向接口编程！！</p>
+<h2 id="需求分析与系统设计">需求分析与系统设计</h2>
+<h2 id="软件工程师">软件工程师</h2>
+<p>软件工程师不是码农，应该具有综合素质</p>
 <ol>
-<li>每个类尽量提供接口或抽象类，或者两者都具备。</li>
-<li>变量的声明类型尽量是接口或者是抽象类。</li>
-<li>任何类都不应该从具体类派生。</li>
-<li>使用继承时尽量遵循里氏替换原则。</li>
+<li>
+<p>技术</p>
+<p>编码能力、数据结构、算法、系统结构、操作系统、计算机网络、分布式系统</p>
+</li>
+<li>
+<p>产品</p>
+<p>业务的理解</p>
+</li>
+<li>
+<p>项目管理</p>
+</li>
+<li>
+<p>研究和创新(RD:Research and Development)</p>
+</li>
 </ol>
-<h2 id="四单一职责原则">四、单一职责原则</h2>
-<blockquote>
-<p>一个类应该有且仅有一个引起它变化的原因，否则类应该被拆分</p>
-</blockquote>
-<p>这个原则的意思是：使用多个隔离的接口，比使用单个接口要好。它还有另外一个意思是：降低类之间的耦合度。由此可见，其实设计模式就是从大型软件架构出发、便于升级和维护的软件设计思想，它强调降低依赖，降低耦合。</p>
-<h2 id="五接口隔离原则interface-segregation-principle">五、接口隔离原则（Interface Segregation Principle）</h2>
-<blockquote>
-<p>尽量将臃肿庞大的接口拆分成更小的和更具体的接口</p>
-</blockquote>
-<h2 id="六迪米特法则">六、迪米特法则</h2>
-<blockquote>
-<p>只与你的直接朋友交谈，不跟“陌生人”说话</p>
-</blockquote>
-<p>又称最少知道原则（Demeter Principle）</p>
-<p>最少知道原则是指：一个实体应当尽量少地与其他实体之间发生相互作用，使得系统功能模块相对独立。</p>
-<h2 id="七合成复用原则composite-reuse-principle">七、合成复用原则（Composite Reuse Principle）</h2>
-<blockquote>
-<p>在软件复用时，要尽量先使用组合或者聚合等关联关系来实现，其次才考虑使用继承关系来实现</p>
-</blockquote>
+<h2 id="修身">修身</h2>
+<ol>
+<li>
+<p>学习 + 思考 + 实践</p>
+<ul>
+<li>学习途径：书、开源代码</li>
+<li>需要形成自己的思想</li>
+<li>知行合一</li>
+</ul>
+</li>
+<li>
+<p>知识 + 方法 + 精神</p>
+<ul>
+<li>知识过时很快</li>
+<li>分析问题、解决问题的能力</li>
+<li>独立思想：Don&rsquo;t follow, 对完美的不懈追求（不要过度：低效、成本、风险）</li>
+</ul>
+</li>
+<li>
+<p><strong>基础乃治学之本</strong></p>
+<ul>
+<li>数据结构、算法、操作系统、系统结构、计算机网络</li>
+<li>软件工程、编程思想</li>
+<li>逻辑思维能力、归纳总结能力、表达能力</li>
+<li>研究能力：分析问题、解决问题</li>
+</ul>
+</li>
+</ol>
+<h2 id="书单">书单</h2>
+<ul>
+<li>《代码大全》</li>
+<li>《软件开发的201个原则》</li>
+<li>《Rapid Development》</li>
+<li>《人月神话》(对于现在的互联网项目管理只是有部分作用)</li>
+</ul>
 
 
                 
@@ -266,11 +309,11 @@
                 <hr>
                 <ul class="pager">
                     
-                    
-                    <li class="next">
-                        <a href="/post/2021-11-04/" data-toggle="tooltip" data-placement="top" title="《代码的艺术》笔记">Next
-                            Post &rarr;</a>
+                    <li class="previous">
+                        <a href="/post/2021-11-01/" data-toggle="tooltip" data-placement="top" title="面向对象编程原则">&larr;
+                            Previous Post</a>
                     </li>
+                    
                     
                 </ul>
                 
