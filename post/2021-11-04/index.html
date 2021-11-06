@@ -92,27 +92,27 @@
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    <li data-tag='/'>
                         <a href="/">Home</a>
                     </li>
                     
                         
-                        <li>
+                        <li data-tag="basic">
                             <a href="/categories/basic">basic</a>
                         </li>
                         
                     
                     
 		    
-                        <li><a href="/top/archive">ARCHIVE</a></li>
+                        <li data-tag="ARCHIVE"><a href="/top/archive">ARCHIVE</a></li>
                     
-                        <li><a href="/top/books/">BOOK</a></li>
+                        <li data-tag="BOOK"><a href="/top/books/">BOOK</a></li>
                     
-                        <li><a href="/top/about/">ABOUT</a></li>
+                        <li data-tag="ABOUT"><a href="/top/about/">ABOUT</a></li>
                     
 
                     
-		    <li>
+		    <li data-tag="search">
                         <a href="/search"><i class="fa fa-search"></i></a>
 		    </li>
                     
@@ -150,6 +150,21 @@
             $navbar.className += " in";
         }
     }
+    
+    let pathname = location.pathname
+    $('li').each((idnex, el) => {
+        let tag = el.getAttribute('data-tag')
+        if (pathname === '/') {
+            if (tag === '/') {
+                el.children[0].style.color = '#888'
+            }
+        
+        } else if (new RegExp(`${tag}`, 'i').test(pathname)) {
+            if(tag !== '/') {
+                el.children[0].style.color = '#888'
+            }
+        }
+    })
 </script>
 
 
@@ -280,7 +295,7 @@
 <li>
 <p>知识 + 方法 + 精神</p>
 <ul>
-<li>知识过时很快</li>
+<li>知识过时很快（<strong><code>如何把知识转化为自己的显得尤为重要</code></strong>）</li>
 <li>分析问题、解决问题的能力</li>
 <li>独立思想：Don&rsquo;t follow, 对完美的不懈追求（不要过度：低效、成本、风险）</li>
 </ul>

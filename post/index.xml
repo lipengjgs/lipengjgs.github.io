@@ -25,5 +25,14 @@
       <description>一、开闭原则（Open Close Principle） 软件实体应当对扩展开放，对修改关闭 当应用的需求改变时，在不修改软件实体的源代码或者二进制代码的前</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://lipengjgs.github.io/post/2021-11-05-%E7%AE%97%E6%B3%9501/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lipengjgs.github.io/post/2021-11-05-%E7%AE%97%E6%B3%9501/</guid>
+      <description>内容 1. 选择问题（selection problem） 问题描述：一组N个数确定其中第k个最大者 法一: 2. 字谜问题 习题</description>
+    </item>
+    
   </channel>
 </rss>
