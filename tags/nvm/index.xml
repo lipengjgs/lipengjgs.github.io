@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nvm on LP&#39;s BLOG</title>
+    <link>https://lipengjgs.github.io/tags/nvm/</link>
+    <description>Recent content in nvm on LP&#39;s BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 06 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lipengjgs.github.io/tags/nvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nvm简单使用（管理本机node版本）</title>
+      <link>https://lipengjgs.github.io/post/2021-11-06-nvm%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E7%AE%A1%E7%90%86%E6%9C%AC%E6%9C%BAnode%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lipengjgs.github.io/post/2021-11-06-nvm%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E7%AE%A1%E7%90%86%E6%9C%AC%E6%9C%BAnode%E7%89%88%E6%9C%AC/</guid>
+      <description>一、 安装 下载对应的安装包nvm-setup.zip（这里以windows为例） 直接安装到eg: C盘根目录(路径不能有空格和中文即可) 二、使用</description>
+    </item>
+    
+  </channel>
+</rss>
