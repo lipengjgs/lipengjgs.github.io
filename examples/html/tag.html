@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+    <head>
+        <meta name="keywords" content="value1,value2">
+        <meta name="description" content="这是一个示例网站">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <!-- http响应头设置，等价物 -->
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <!-- 这样写可以达到的效果是如果安装了GCF(Google Chrome Frame(谷歌内嵌浏览器框架GCF))，则使用GCF来渲染页面，如果未安装GCF，则使用最高版本的IE内核进行渲染 -->
+        <!-- 像在360这种双核浏览器中 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>这里是页面名称</title>
+        <link rel="stylesheet" href="./common.css">
+        <style>
+            .app {
+                border: 0;
+                margin: 0;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="app">App</div>
+        <div>
+            <p>这是一个段落<br>换行了<span>文本</span></p>
+
+            <pre>
+                a:111
+                b:   222
+                c:      333
+                d:         444
+            </pre>
+
+            <hr>
+
+            <ol type="1">
+                <li></li>
+            </ol>
+            <ol type="A">
+                <li></li>
+            </ol>
+            <ol type="a">
+                <li></li>
+            </ol>
+            <ol type="I">
+                <li></li>
+            </ol>
+            <ol type="i">
+                <li></li>
+            </ol>
+
+            <dl>
+                <dt>软件说明：</dt>
+                <dd>简单介绍软件的功能及基本应用</dd>
+                <dt>软件界面</dt>
+                <dd>用于选择软件的外观</dd>
+            </dl>
+        </div>
+
+        <script>
+            window.addEventListener('load', () => {
+                console.log('2. load （在整个页面及其外部资源加载完成后触发）')
+            })
+            window.addEventListener('beforeunload', () => {
+                console.log('3. beforeunload')
+            })
+            window.addEventListener('unload', () => {
+                console.log('4. unload')
+            })
+            document.addEventListener('DOMContentLoaded', () => {
+                console.log('1: DOMContentLoaded')
+                let app = document.querySelector('.app')
+                app.parentElement.removeChild(app)
+            })
+        </script>
+    </body>
+
+</html>
